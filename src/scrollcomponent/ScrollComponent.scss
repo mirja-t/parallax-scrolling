@@ -1,0 +1,34 @@
+.scrollcomponent {
+    position: relative;
+    z-index: 1;
+    > * {
+        min-height: 110vh;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.parallax-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    > * {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+        > * {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

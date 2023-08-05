@@ -1,0 +1,6 @@
+.sticky-content {
+    height: 100%;
+    > * {
+        position: sticky;
+    }
+}
