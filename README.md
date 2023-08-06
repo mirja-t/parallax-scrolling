@@ -5,7 +5,6 @@ This component takes custom content and a background component with motion props
 
 ## Demo
 
-https://react-parallax-scrolling-demo.netlify.app/
 [React Parallax Demo on Netlify](https://react-parallax-scrolling-demo.netlify.app/).
 
 ## How to use
