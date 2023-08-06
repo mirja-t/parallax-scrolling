@@ -43,13 +43,13 @@ export const ImageSegment = ({
             x,
             scale,
             clipPath,
-            //backgroundImage: image ? `url(${image})` : ''
+            backgroundImage: image ? `url(${image})` : ''
         }}
         className={`image-segment ${className}`}>
         <div>
             <div ref={ref} >
                 { children && children }
-                {image && <img src={image} alt=""/>}
+                {/* {image && <img src={image} alt=""/>} */}
             </div>
         </div>
     </motion.div>)
