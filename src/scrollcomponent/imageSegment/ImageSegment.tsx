@@ -49,7 +49,6 @@ export const ImageSegment = ({
         <div>
             <div ref={ref} >
                 { children && children }
-                {/* {image && <img src={image} alt=""/>} */}
             </div>
         </div>
     </motion.div>)
