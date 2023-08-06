@@ -26,8 +26,8 @@ interface ImageSegmentProps {
 
 export const ImageSegment = ({ 
     scrollYProgress, 
-    count,
-    index,
+    count=1,
+    index=0,
     children, 
     image,
     movement,

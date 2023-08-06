@@ -1,13 +1,10 @@
-import { MotionValue } from 'framer-motion'
 import { ScrollComponent } from './scrollcomponent/ScrollComponent'
 import { ImageSegment } from './scrollcomponent/imageSegment/ImageSegment'
 import { StickyContent } from './stickyContent/StickyContent'
 import { backgroundSegments } from './BackgroundSegments'
 
-
-
-const SectionBg = (scrollYProgress: MotionValue<number>) => (
-  <>
+function SectionBg(scrollYProgress: any) {
+  return (<>
     { backgroundSegments.map((segment, index) => (
       <ImageSegment 
         key={index}
@@ -28,7 +25,8 @@ const SectionBg = (scrollYProgress: MotionValue<number>) => (
         image={segment.image}>
           { segment?.children && segment.children }
       </ImageSegment>))}
-  </>)
+    </>)
+  }
 
 function App() {
 
